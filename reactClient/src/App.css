@@ -1,0 +1,184 @@
+
+* 
+{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.cf:before, .cf:after
+{content: " ";display: block; }
+.cf
+{ *zoom: 1; }
+.cf:after
+{clear: both;}
+.lft
+{float: left;}
+.rit
+{float: right;}
+button, button:focus
+{outline: none;}
+
+.fx
+{display: -webkit-flex;display: -ms-flexbox;display: flex;flex: 1;}
+.fxwp
+{flex-wrap: wrap;}
+
+.fxdc
+{-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;}
+.fxdr
+{-webkit-flex-direction: row;-ms-flex-direction: row;flex-direction: row;}
+
+.fxjcc
+{-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;}
+.fxjcfs
+{-webkit-justify-content: flex-start;-ms-flex-pack: flex-start;justify-content: flex-start;}
+.fxjcfe
+{  justify-content: flex-end;}
+.fxjcsb
+{  justify-content: space-between;}
+.fxjcsa
+{  justify-content: space-around;}
+.fxjcse
+{  justify-content: space-evenly;}
+
+.fxaic
+{-webkit-align-items: center;-ms-flex-align: center;align-items: center;}
+.fxaifs
+{-webkit-align-items: flex-start;-ms-flex-align: flex-start;align-items: flex-start;}
+.fxaife
+{-webkit-align-items: flex-end;-ms-flex-align: flex-end;align-items: flex-end;}
+
+.w100
+{width:100%;}
+.w50
+{width:50%;}
+.h100
+{height:100%;}
+.img100
+{width:100%;}
+.anatimg
+{max-width: 1052px;}
+h1, h2, h3, h4, p
+{margin: 0;font-size: 1em;}
+h1
+{font-size: 1.1em;}
+h2
+{font-size: 1.05em;}
+h3
+{font-size: 1.0em;}
+p
+{font-size: 1em;}
+label
+{font-weight: bold;color: aquamarine;}
+
+a:visited, a:active, a:link, a:hover
+{text-decoration:none;padding:0;margin:0;outline:0;border:none;color:inherit;
+  text-transform:inherit;line-height:inherit;font-size: inherit;}
+
+.nav
+{list-style: none;}
+.nav li
+{display: inline;padding: 0 10px;}
+.nav li a
+{font-weight: bold;font-size: 18px;text-decoration:none;}
+.nav li a:hover
+{text-decoration:underline;}
+.nav li a.active
+{text-decoration:none;border-bottom: #fff solid 2px;}
+.landing
+{background-color: seagreen;min-height: 100vh;color: #fff;font-size: 15px;padding: 15px;}
+.landing span
+{color: brown;font-size: 18px;}
+.landing ul
+{list-style: square;}
+.initialfetch 
+{background-color: slategrey;min-height: 100vh;color: #fff;font-size: 15px;padding: 15px; text-align: left;}
+.cityname
+{background-color: brown;min-height: 100vh;color: #fff;font-size: 15px;padding: 15px;}
+.population 
+{background-color: cadetblue;min-height: 100vh;color: #fff;font-size: 15px;padding: 15px;}
+.notfound 
+{background-color:steelblue;min-height: 100vh;color: #fff;font-size: 15px;padding: 15px;}
+.notfound h1
+{font-size: 8.5em;}
+.notfound h2
+{font-size: 3.0em;}
+.notfound h3
+{font-size: 2.0em;}
+.notfound h4
+{font-size: 2.0em;}
+.notfound h4 a
+{text-decoration: underline;}
+.cityformdiv form input[type="text"], .cityformdiv form input[type="submit"], .popformdiv form input[type="number"]
+{display: block;width: 100%;padding: 10px 8px;border-radius: 8px;outline: none;border: none;margin-bottom: 10px;}
+.cityformdiv form input:last-child
+{color: #fff;background-color: green;font-weight: bold;text-transform: uppercase;}
+.cityformdiv form input:last-child:hover
+{color: #fff;background-color: steelblue;cursor: pointer;}
+.rbdiv
+{margin-bottom: 10px;}
+.rbdiv h2
+{color: palegreen;}
+.rbdiv label
+{color: palegreen;}
+.tac
+{text-align: center;}
+.cndiv, .popdiv
+{min-width: 400px;}
+/* .loading img 
+{animation: loading-spin infinite 2s linear;height: 200px;pointer-events: none;} */
+.loading img 
+{height: 50px;}
+.initialfetch > div
+{}
+.initialfetch > div h2, .title
+{padding-bottom: 20px;font-size: 20px;}
+.title2
+{padding: 2px;font-size: 20px;}
+
+@keyframes loading-spin {
+  from 
+  {transform: rotate(0deg);}
+  to 
+  {transform: rotate(360deg);}
+}
+
+
+
+
+/* 
+min-height: 100vh;
+font-size: calc(10px + 2vmin);
+color: #61dafb;
+background-color: #282c34;
+background-color: #1e1e1e;
+background-color: #252525;
+background-color: #1C1C1C;
+background-color: #f8f8f8;
+background-color: #f7f7f7;
+background-color: #f2f2f2;
+background-color: #f8f8f8;
+background-color: #3c3c3c;
+background-color: #ecf0f1;
+
+background-color: #76b900;
+background-color: #eaeaea;
+background-color: #4b4b4b;
+
+
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+  text-align: center;
+}
+
+<a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Learn React</a>
+<img src={logo} className="App-logo" alt="logo" />
+
+
+*/
+
+
+
+
+
+
+

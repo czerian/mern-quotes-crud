@@ -1,0 +1,17 @@
+{
+  "name": "nws-rc",
+  "version": "1.1.0",
+  "description": "We come in peace",
+  "scripts": {
+    "install-rc": "npm install --prefix reactClient",
+    "install-nws": "npm install --prefix nodeServer",
+    "install-both": "cd nodeServer && npm install && cd ../reactClient && npm install",
+    "run-nws": "npm run server --prefix nodeServer",
+    "run-rc": "npm start --prefix reactClient",
+    "run-both": "concurrently \"npm run run-nws\" \"npm run run-rc\"",
+    "heroku-postbuild": "cd nodeServer && npm install && cd ../reactClient && npm install && npm run build"
+  },
+  "dependencies": {
+    "concurrently": "^4.1.0"
+  }
+}

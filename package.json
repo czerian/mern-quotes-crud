@@ -3,6 +3,7 @@
   "version": "1.1.0",
   "description": "We come in peace",
   "scripts": {
+    "start": "npm start --prefix nodeServer",
     "install-rc": "npm install --prefix reactClient",
     "install-nws": "npm install --prefix nodeServer",
     "install-both": "cd nodeServer && npm install && cd ../reactClient && npm install",

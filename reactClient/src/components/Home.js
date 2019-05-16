@@ -1,12 +1,17 @@
-import React, { Component } from 'react';
-import { InitialFetch } from './'
+import React, { Component } from "react";
+import { CitiesCrud, Cities } from "./";
 
 class Home extends Component {
   render() {
     return (
-        <div className="fx fxdr fxjcc fxaic">
-          <InitialFetch/>
-        </div> 
+      <div className="home fx fxdr fxjcc fxaic">
+        <div className="w50">
+          <CitiesCrud />
+        </div>
+        <div className="w50">
+          <Cities />
+        </div>
+      </div>
     );
   }
 }

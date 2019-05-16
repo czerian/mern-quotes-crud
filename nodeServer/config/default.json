@@ -1,0 +1,4 @@
+{
+  "dbURI": "mongodb+srv://muli:getOUT00@dreams-pim8y.mongodb.net/coffee?retryWrites=true",
+  "logsdbURI": "mongodb+srv://muli:getOUT00@dreams-pim8y.mongodb.net/logsdb?retryWrites=true"
+}

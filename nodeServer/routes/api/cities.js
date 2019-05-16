@@ -4,11 +4,18 @@ const router = express.Router();
 const Citie = require("../../models/Citie");
 
 router.get("/", (req, res) => {
-  Citie.find((err, city) => {
-    if (err) return res.json({ error: err });
-    return res.json(city);
-  });
+  Citie.find()
+    .sort({ date: -1 })
+    .then(cities => res.json(cities))
+    .catch(err => res.json(err));
 });
+
+// router.get("/", (req, res) => {
+//   Citie.find((err, city) => {
+//     if (err) return res.json({ error: err });
+//     return res.json(city);
+//   });
+// });
 
 router.post("/", (req, res) => {
   const city = new Citie();
@@ -53,6 +60,14 @@ router.delete("/id/:id", (req, res) => {
   Citie.findById(req.params.id)
     .then(city => city.remove().then(() => res.json(city)))
     .catch(err => res.status(404).json({ error: err }));
+});
+
+router.post("/update", (req, res) => {
+  const { id, update } = req.body;
+  Citie.findByIdAndUpdate(id, update, err => {
+    if (err) return res.json({ success: false, error: err });
+    return res.json({ success: true });
+  });
 });
 
 router.get("/name/:name", (req, res) => {

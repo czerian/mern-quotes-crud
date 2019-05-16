@@ -6,7 +6,7 @@ const Quote = require("../../models/Quote");
 router.get("/", (req, res) => {
   Quote.find((err, data) => {
     if (err) return res.json({ success: false, error: err });
-    return res.json({ success: true, data: data });
+    return res.json(data);
   });
 });
 
@@ -41,6 +41,36 @@ router.delete("/del_quote", (req, res) => {
     if (err) return res.send(err);
     return res.json({ success: true });
   });
+});
+
+router.delete("/duote/:id", (req, res) => {
+  Quote.findById(req.params.id)
+    .then(quote => quote.remove().then(() => res.json(quote)))
+    .catch(err => res.status(404).json({ error: err }));
+});
+
+router.get("/quote/id/:id", (req, res) => {
+  Quote.findById(req.params.id)
+    .then(quote => {
+      if (quote) {
+        res.json(quote);
+      } else {
+        res.status(404).json({ status: 404 });
+      }
+    })
+    .catch(err => res.status(404).json({ error: err }));
+});
+
+router.get("/quote/:qid", (req, res) => {
+  Quote.findOne({ id: req.params.qid })
+    .then(quote => {
+      if (quote) {
+        res.json(quote);
+      } else {
+        res.status(404).json({ status: 404 });
+      }
+    })
+    .catch(err => res.status(404).json({ error: err }));
 });
 
 module.exports = router;

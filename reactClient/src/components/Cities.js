@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Images } from "../theme";
-import { Nav } from "./";
+import { Nav } from ".";
 
-class JskingFetch extends Component {
+class Cities extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -47,20 +47,20 @@ class JskingFetch extends Component {
               return (
                 <div key={_id}>
                   <p>
-                    <label>City Name:</label>
+                    <label>City Name: </label>
                     {name}
                   </p>
                   <p>
-                    <label>Population:</label> {population}
+                    <label>Population: </label> {population}
                   </p>
                   <p>
-                    <label>Country:</label> {country}
+                    <label>Country: </label> {country}
                   </p>
                   <p>
-                    <label>ID:</label> {_id}
+                    <label>ID: </label> {_id}
                   </p>
                   <p>
-                    <label>Date Added:</label> {date}
+                    <label>Date Added: </label> {date}
                   </p>
                   <hr />
                 </div>
@@ -84,4 +84,4 @@ class JskingFetch extends Component {
   }
 }
 
-export default JskingFetch;
+export default Cities;

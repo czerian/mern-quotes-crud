@@ -11,7 +11,9 @@
 {float: left;}
 .rit
 {float: right;}
-button, button:focus
+button
+{outline: none;padding: 6px 12px;border-radius: 6px;border: none;}
+button:focus
 {outline: none;}
 
 .fx
@@ -84,9 +86,13 @@ a:visited, a:active, a:link, a:hover
 .landing
 {background-color: seagreen;min-height: 100vh;color: #fff;font-size: 15px;padding: 15px;}
 .landing span
-{color: brown;font-size: 18px;}
+{color: greenyellow;font-size: 18px;}
 .landing ul
-{list-style: square;}
+{list-style: square;padding: 0;}
+.landing input
+{ padding: 6px;border-radius: 6px;border: none;outline: none;margin-right: 6px;width: 170px;color: darkred;}
+.landing input[type="submit"]
+{margin-right: 0;width: auto;padding: 6px 20px;}
 .initialfetch 
 {background-color: slategrey;min-height: 100vh;color: #fff;font-size: 15px;padding: 15px; text-align: left;}
 .cityname
@@ -131,6 +137,20 @@ a:visited, a:active, a:link, a:hover
 {padding-bottom: 20px;font-size: 20px;}
 .title2
 {padding: 2px;font-size: 20px;}
+.home
+{height: 100vh;overflow: hidden;}
+.home .w50
+{overflow: auto;position: relative;height: inherit;}
+.home .w50 .landing h2
+{padding-bottom: 10px;padding-top: 25px;}
+.home .nav
+{text-align: center;}
+h1 
+{font-size: 3.0em;text-decoration: underline;margin: 10px auto;}
+.crud
+{width: 100%;}
+.pdtb10
+{padding: 10px 0;}
 
 @keyframes loading-spin {
   from 

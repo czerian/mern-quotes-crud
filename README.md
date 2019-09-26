@@ -1,5 +1,8 @@
 # MERN Stack Cities CRUD
 
+You can find me here:
+[https://mern-cities-crud.herokuapp.com](https://mern-cities-crud.herokuapp.com)
+
 All hail the new king
 
 ## API Endpoints:
@@ -41,4 +44,7 @@ $ npm start
 # We come in peace
 
 We come to you not as conquerors, but as liberators
+
+Build by yours truly
+[Bryan Czar](https://bryanczar.com)
 

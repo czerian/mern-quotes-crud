@@ -7,20 +7,8 @@ const Nav = () => {
       <ul className="nav">
         <li>
           <NavLink exact to="/">
-            CitiesCrud
+          QuotesCrud
           </NavLink>
-        </li>
-        <li>
-          <NavLink to="/cities">Cities</NavLink>
-        </li>
-        {/* <li>
-          <NavLink to="/quotes_crud">QuotesCrud</NavLink>
-        </li> */}
-        <li>
-          <NavLink to="/population">Filter By Population</NavLink>
-        </li>
-        <li>
-          <NavLink to="/city_name">Filter By City Name</NavLink>
         </li>
         <li>
           <NavLink to="/dummy">404 Page</NavLink>

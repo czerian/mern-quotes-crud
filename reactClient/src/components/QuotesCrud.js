@@ -118,7 +118,7 @@ class QuotesCrud extends Component {
     return (
       <div className="landing fx fxdc fxjcc fxaic">
         <Nav />
-        <h2>Badass Quotes</h2>
+        <h1>Badass Quotes</h1>
         <ul>
           {data.length <= 0 ? (
             <div className="loading tac">

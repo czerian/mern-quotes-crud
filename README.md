@@ -1,20 +1,18 @@
-# MERN Stack Cities CRUD
+# Badass Quotes MERN Stack CRUD
 
 You can find me here:
-[https://mern-cities-crud.herokuapp.com](https://mern-cities-crud.herokuapp.com)
+[https://mern-quotes-crud.herokuapp.com](https://mern-quotes-crud.herokuapp.com/)
 
 All hail the new king
 
 ## API Endpoints:
 ```sh
-# /api/cities
-# /api/cities/id/:id
-# /api/cities/update
-# /api/cities/name/:name
-# /api/cities/country/:country
+# /api/quotes
+# /api/quotes/del_quote
+# /api/quotes/update_quote
 ```
 
-### Rock On | Roll Up
+### Fly Away
 
 ```sh
 $ npm i

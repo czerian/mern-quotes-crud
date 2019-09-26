@@ -45,6 +45,6 @@ $ npm start
 
 We come to you not as conquerors, but as liberators
 
-Build by yours truly
-[Bryan Czar](https://bryanczar.com)
+Build by yours truly:
+[bryanczar.com](https://bryanczar.com)
 

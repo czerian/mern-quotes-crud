@@ -1,0 +1,4 @@
+{
+  "dbURI": "your mongodbURI, you can use local or MongoDB Atlas if you like",
+  "logsdbURI": "your mongologsdbURI, you can use local or MongoDB Atlas if you like"
+}

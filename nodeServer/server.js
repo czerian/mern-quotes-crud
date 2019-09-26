@@ -16,7 +16,7 @@ app.use(cors());
 app.use("/api/cities", require("./routes/api/cities"));
 app.use("/api/quotes", require("./routes/api/quotes"));
 
-// const dbURI = "mongodb+srv://muli:getOUT00@dreams-pim8y.mongodb.net/coffee?retryWrites=true";
+// const dbURI = "your mongodbURI";
 // mongoose.connect(dbURI, { useNewUrlParser: true, useCreateIndex: true });
 // let db = mongoose.connection;
 // db.once("open", () => console.log("MongoDB successfully connected..."));

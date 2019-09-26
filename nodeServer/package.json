@@ -1,6 +1,7 @@
 {
   "name": "nws",
   "version": "1.1.0",
+  "author": "Bryan Czar - https://bryanczar.com",
   "description": "NodeJS Web Service",
   "main": "server.js",
   "scripts": {

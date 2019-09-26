@@ -1,6 +1,7 @@
 {
   "name": "nws-rc",
   "version": "1.1.0",
+  "author": "Bryan Czar - https://bryanczar.com",
   "description": "We come in peace",
   "scripts": {
     "start": "npm start --prefix nodeServer",

@@ -1,6 +1,7 @@
 {
   "name": "react-spa",
   "version": "0.1.0",
+  "author": "Bryan Czar - https://bryanczar.com",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",

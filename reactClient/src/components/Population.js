@@ -104,6 +104,7 @@ class Population extends Component {
     const { population, loading, cities, error, filteredCities } = this.state;
     return (
       <div className="population fx fxdc fxjcc fxaic">
+        <Nav />
         <h2 className="title">Population Filter</h2>
         <div className="popdiv">
           <div className="popformdiv">
@@ -221,7 +222,6 @@ class Population extends Component {
             )}
           </div>
         </div>
-        <Nav />
       </div>
     );
   }

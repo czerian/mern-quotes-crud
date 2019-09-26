@@ -117,6 +117,7 @@ class QuotesCrud extends Component {
     const { data, message, idToDelete, idToUpdate, updateToApply } = this.state;
     return (
       <div className="landing fx fxdc fxjcc fxaic">
+        <Nav />
         <h2>Badass Quotes</h2>
         <ul>
           {data.length <= 0 ? (
@@ -169,7 +170,6 @@ class QuotesCrud extends Component {
           />
           <button onClick={() => this.updateDB(idToUpdate, updateToApply)}>UPDATE</button>
         </div>
-        <Nav />
       </div>
     );
   }

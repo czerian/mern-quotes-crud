@@ -77,6 +77,7 @@ class CityName extends Component {
     const { cname, loading, cities, error, filteredCities } = this.state;
     return (
       <div className="cityname fx fxdc fxjcc fxaic">
+        <Nav />
         <h2 className="title">City Name Filter</h2>
         <div className="cndiv">
           <div className="cityformdiv">
@@ -160,7 +161,6 @@ class CityName extends Component {
             )}
           </div>
         </div>
-        <Nav />
       </div>
     );
   }

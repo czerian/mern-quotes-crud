@@ -13,9 +13,9 @@ const Nav = () => {
         <li>
           <NavLink to="/cities">Cities</NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to="/quotes_crud">QuotesCrud</NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink to="/population">Filter By Population</NavLink>
         </li>
@@ -23,10 +23,7 @@ const Nav = () => {
           <NavLink to="/city_name">Filter By City Name</NavLink>
         </li>
         <li>
-          <NavLink to="/jonkri">jonkri.se</NavLink>
-        </li>
-        <li>
-          <NavLink to="/dummy">Link to 404 Page</NavLink>
+          <NavLink to="/dummy">404 Page</NavLink>
         </li>
       </ul>
     </>

@@ -26,7 +26,7 @@ class Cities extends Component {
           })
         )
         .catch(error => this.setState({ error, loading: false }));
-    }, 1000);
+    }, 3000);
   }
 
   componentDidMount() {
@@ -37,6 +37,7 @@ class Cities extends Component {
     const { loading, cities, title, error } = this.state;
     return (
       <div className="initialfetch fx fxdc fxjcc fxaic">
+        <Nav />
         <div>
           {error ? <p className="title2 tac">{error.message}</p> : null}
           {title ? title : null}
@@ -72,13 +73,12 @@ class Cities extends Component {
               <img src={Images.loading1} alt="loading" />
               <h3>LOADING...</h3>
               <h3>
-                Fetch query to /api/cities with a 1 seconds setTimeout delay to simulate the query
+                Fetch query to /api/cities with a 3 seconds setTimeout delay to simulate the query
                 process.
               </h3>
             </div>
           )}
         </div>
-        <Nav />
       </div>
     );
   }
